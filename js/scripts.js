@@ -1,8 +1,9 @@
 $(document).ready(function() {
   $("#formOne").submit(function() {
     event.preventDefault();
+    $("ul#results").hide();
     $("ul#results").children("li").remove();
-    
+
     //convert string to a number FIRST
     var inputNumber = parseInt($("input#inputNumber").val());
     var regularCount = [];
@@ -35,6 +36,7 @@ $(document).ready(function() {
       var temp = modifiedCount[i];
       $("ul#results").append("<li>" + temp + "</li>");
     }
+    $("ul#results").show();
 
   });
 });
