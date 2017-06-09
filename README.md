@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Ping Pong!_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Displays Ranges with Different Outputs Depending on Divisibility of Numbers, June 9, 2017_
 
-#### By _**{List of contributors}**_
+#### By _**Mick Sexton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The webpage asks the user for a whole number(integer) greater than zero. Then, it displays the range starting from one, counting up to the user's input number (as well as a funny picture). It replaces all values on this list divisible by 3 with the word "ping", all values divisible by 5 with "pong", and all values divisible by 15 with the word "ping-pong" (over-riding just 3 or just 5). It then gives the user the option to see this list in reverse order. When user clicks on the reverse button, they see another funny picture and the reverse ordered list with the same word substitutions._
 
 ## Setup/Installation Requirements
 
@@ -20,18 +20,18 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs at this time._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Please notify Mick Sexton at lacrookedbeat@hotmail.com for any questions, feedback, or concerns._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Programming Languages used for this webpage include HTML, CSS, and Javascript. Atom was used for the IDE. JSFiddle was used for initial JS testing. Git and GitHub were used to save changes and track progress._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software operates under the MIT license.*
 
-Copyright (c) 2017 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Mick Sexton_**
