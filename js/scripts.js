@@ -10,6 +10,9 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#inputNumber").val());
     var regularCount = [];
     var modifiedCount = [];
+    var ping = 0;
+    var pong = 0;
+    var pingPong = 0;
 
     for (var i=1; i <= inputNumber; i++) {
     	regularCount[i-1] = i;
@@ -21,10 +24,13 @@ $(document).ready(function() {
 
       if (temp % 15 === 0) {
       	result = "ping-pong";
+        pingPong++;
       } else if (temp % 5 === 0) {
       	result = "pong";
+        pong++;
       } else if (temp % 3 === 0) {
       	result = "ping";
+        ping++;
       } else {
       	result = temp;
       }
