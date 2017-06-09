@@ -10,6 +10,8 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#inputNumber").val());
     var regularCount = [];
     var modifiedCount = [];
+
+    //counters and strings for trash talk between ping-pongers
     var ping = 0;
     var pong = 0;
     var pingPong = 0;
@@ -23,16 +25,17 @@ $(document).ready(function() {
     var milosh4 = "Perhaps this young cub has matured into the mama of Russian bears. No matter, Milosh will destroy you like I did my liver long ago";
     var sergei5 = "Multiple ping-pongs! Sergei is champion, I think, no?";
     var milosh5 = "Champion of weakling capitalist scum, I'll hack you down like I hacked recent American election!";
-    var sergei6 = "I get ALL the pin-pongs! You cannot deny Sergei's supreme masculinity. Time it is now for you to quit!";
+    var sergei6 = "I get ALL the pin-pongs! You cannot deny Sergei's supreme masculinity. Time it is now for you to stop quit!";
     var milosh6 = "Well done, you have bested Milosh .... and unfrozen the cold Siberian winter in my heart. Well done!";
-
     var sergeiSays = "";
     var miloshSays = "";
 
+    //assign values to array for range of numbers
     for (var i=1; i <= inputNumber; i++) {
     	regularCount[i-1] = i;
     }
 
+    //replace any divisible values with correct strings
     for (var i=1; i <= inputNumber; i++) {
     	var temp = regularCount[i-1];
       var result;
@@ -52,20 +55,19 @@ $(document).ready(function() {
       modifiedCount[i-1] = result;
     }
 
-    //alert(regularCount.toString());
-    //alert(modifiedCount.toString());
-
+    //write values to HTML code
     for (var i=0; i < inputNumber; i++) {
       var temp = modifiedCount[i];
       $("ul#normalOrder").append("<li>" + temp + "</li>");
     }
 
+    //write reverse values too
     for (var i = modifiedCount.length -1; i >= 0; i--) {
       var temp = modifiedCount[i];
       $("ul#reverseOrder").append("<li>" + temp + "</li>");
-      //$("#reverseOrder").show();
     }
 
+    //write trash talk statement to HTML according to counter measurements
     if (ping === 0) {
       sergeiSays = sergei1;
       miloshSays = milosh1;
@@ -89,12 +91,13 @@ $(document).ready(function() {
     $("#sergeiSays").text(sergeiSays);
     $("#miloshSays").text(miloshSays);
 
+    //reveal initial outcome and Sergei's trash talk
     $("#results").show();
     $("#reverseButton").show();
 
-
     event.preventDefault();
   });
+  //if Reverse button pressed, show reverse outcome and Milosh's talk
   $("button#reverseButton").click(function() {
     $("#reverseSection").show();
   });
