@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $("#formOne").submit(function() {
-    event.preventDefault();
-    $("#results").hide();
+    //$("#results").hide();
+    $("#reverseSection").hide();
+    //$("#reverseButton").show();
     $("ul#normalOrder").children("li").remove();
     $("ul#reverseOrder").children("li").remove();
 
@@ -38,13 +39,19 @@ $(document).ready(function() {
       $("ul#normalOrder").append("<li>" + temp + "</li>");
     }
 
-    //alert(modifiedCount.length);
     for (var i = modifiedCount.length -1; i >= 0; i--) {
       var temp = modifiedCount[i];
       $("ul#reverseOrder").append("<li>" + temp + "</li>");
+      //$("#reverseOrder").show();
     }
 
     $("#results").show();
+    $("#reverseButton").show();
 
+
+    event.preventDefault();
+  });
+  $("button#reverseButton").click(function() {
+    $("#reverseSection").show();
   });
 });

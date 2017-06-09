@@ -16,19 +16,24 @@
 
       <form id="formOne">
         <input id="inputNumber" class="form-control" type="number" required>
-        <button type="submit" class="btn">Let's Ping Pong Already!</button>
-      </form><br>
+        <button id="normalButton" type="submit" class="btn">Let's Ping Pong Already!</button>
+      </form>
+      <br>
+      <button id="reverseButton" type="submit" class="btn">See Reverse Order</button>
+      <br>
 
       <div id="results" class="container">
         <div class="row">
 
           <div class="col-xs-6">
-            <h5>Incremental Order:</h5>
+            <img src="img/pic1.jpg" alt="Photo of Ping Pong Champion">
+            <h5>PING!</h5>
             <ul id="normalOrder">
             </ul>
           </div>
-          <div class="col-xs-6">
-            <h5>Reverse Order:</h5>
+          <div id="reverseSection" class="col-xs-6">
+            <img src="img/pic2.jpg" alt="Photo of a guy going huuaaardd at Ping Ponging">
+            <h5>PONG!</h5>
             <ul id="reverseOrder">
             </ul>
           </div>
