@@ -1,8 +1,9 @@
 $(document).ready(function() {
   $("#formOne").submit(function() {
     event.preventDefault();
-    $("ul#results").hide();
-    $("ul#results").children("li").remove();
+    $("#results").hide();
+    $("ul#normalOrder").children("li").remove();
+    $("ul#reverseOrder").children("li").remove();
 
     //convert string to a number FIRST
     var inputNumber = parseInt($("input#inputNumber").val());
@@ -34,9 +35,16 @@ $(document).ready(function() {
 
     for (var i=0; i < inputNumber; i++) {
       var temp = modifiedCount[i];
-      $("ul#results").append("<li>" + temp + "</li>");
+      $("ul#normalOrder").append("<li>" + temp + "</li>");
     }
-    $("ul#results").show();
+
+    //alert(modifiedCount.length);
+    for (var i = modifiedCount.length -1; i >= 0; i--) {
+      var temp = modifiedCount[i];
+      $("ul#reverseOrder").append("<li>" + temp + "</li>");
+    }
+
+    $("#results").show();
 
   });
 });

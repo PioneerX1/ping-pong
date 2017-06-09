@@ -12,17 +12,28 @@
       <div class="jumbotron">
         <h1>Play Ping-Pong with Me!</h1>
       </div>
-      <h4>Okay, it's not really ping-pong but go ahead and put a whole number in below greater than zero. It will create a range from 1 up to your number, replace results divisible by 15 with "ping-pong", replace results divisible by 5 with "pong", and replace results divisible by 3 with "ping". Go on, give it a shot!</h4>
+      <h4>Okay, it's not really ping-pong but go ahead and put a whole number in below greater than zero. It will display a range from 1 up to your number, replace results divisible by 15 with "ping-pong", replace results divisible by 5 with "pong", and replace results divisible by 3 with "ping". Go on, give it a shot!</h4>
 
       <form id="formOne">
         <input id="inputNumber" class="form-control" type="number" required>
         <button type="submit" class="btn">Let's Ping Pong Already!</button>
-      </form>
+      </form><br>
 
-      <ul id="results">
+      <div id="results" class="container">
+        <div class="row">
 
-      </ul>
-
+          <div class="col-xs-6">
+            <h5>Incremental Order:</h5>
+            <ul id="normalOrder">
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <h5>Reverse Order:</h5>
+            <ul id="reverseOrder">
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
