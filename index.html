@@ -11,42 +11,38 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Play Ping-Pong with Me!</h1>
-
-      <p>Okay, it's not really ping-pong but go ahead and put a whole number in that is greater than zero. It will display a range from 1 up to your number, and then: </p>
-      <ul>
-        <li>replace results divisible by 3 with "ping"</li>
-        <li>replace results divisible by 5 with "pong"</li>
-        <li>and replace results divisible by 15 (5 &amp; with "ping-pong"</li>
-      </ul>
-      <p>Go on, give it a shot!</p>
-
-      <form id="formOne">
-        <input id="inputNumber" class="form-control" type="number" required>
-        <button id="normalButton" type="submit" class="btn">Let's Ping Pong Already!</button>
-      </form>
-
-      <button id="reverseButton" type="submit" class="btn">See Reverse Order</button>
-
-
-      <div id="results" class="container">
-        <div class="row">
-
-          <div class="col-xs-6">
-            <h3>PING!</h3>
-            <img src="img/pic1.jpg" alt="Photo of Ping Pong Champion">
-            <ul id="normalOrder">
-              <br>
-            </ul>
-          </div>
-          <div id="reverseSection" class="col-xs-6">
-            <h3>PONG!</h3>
-            <img src="img/pic2.jpg" alt="Photo of a guy going huuaaardd at Ping Ponging">
-            <ul id="reverseOrder">
-              <br>
-            </ul>
+        <p>Okay, it's not really ping-pong but go ahead and put a whole number in that is greater than zero. It will display a range from 1 up to your number, and then: </p>
+        <ul>
+          <li>replace results divisible by 3 with "ping"</li>
+          <li>replace results divisible by 5 with "pong"</li>
+          <li>and replace results divisible by 15 (5 &amp; with "ping-pong"</li>
+        </ul>
+        <p>Go on, give it a shot ... and watch these amazing Russian champs switch back &amp; forth between 1st and 3rd person!</p>
+        <form id="formOne">
+          <input id="inputNumber" class="form-control" type="number" required>
+          <button id="normalButton" type="submit" class="btn">Let's Ping Pong Already!</button>
+        </form>
+        <button id="reverseButton" type="submit" class="btn">See Reverse Order</button>
+        <div id="results" class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <h3>PING!</h3>
+              <img src="img/pic1.jpg" alt="Photo of Ping Pong Champion">
+              <ul id="normalOrder">
+                <br>
+                <h4><span id="sergeiSays"></span></h4>
+              </ul>
+            </div>
+            <div id="reverseSection" class="col-xs-6">
+              <h3>PONG!</h3>
+              <img src="img/pic2.jpg" alt="Photo of a guy going huuaaardd at Ping Ponging">
+              <ul id="reverseOrder">
+                <br>
+                <h4><span id="miloshSays"></span></h4>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </body>
